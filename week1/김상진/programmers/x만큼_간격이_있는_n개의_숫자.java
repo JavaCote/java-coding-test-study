@@ -1,0 +1,22 @@
+package week1.김상진.programmers;
+
+/**
+ * PackageName : week1.김상진.programmers
+ * FileName    : x만큼_간격이_있는_n개의_숫자
+ * Author      : sangxxjin
+ * Date        : 2025. 4. 27.
+ * Description : 
+ * =====================================================================================================================
+ * DATE          AUTHOR               NOTE
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 2025. 4. 27.     sangxxjin               Initial creation
+ */
+public class x만큼_간격이_있는_n개의_숫자 {
+	public long[] solution(int x, int n) {
+		long[] answer = new long[n];
+		for(int i=1; i<=n; i++ ){
+			answer[i-1]=(long)i*x;
+		}
+		return answer;
+	}
+}

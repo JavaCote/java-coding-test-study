@@ -1,15 +1,18 @@
-package Week1.김상진.promrammers;
+package week1.김상진.programmers;
 
 /**
- * PackageName : Week1.김상진.promrammers
- * FileName    : a
+ * PackageName : week1.김상진.programmers
+ * FileName    : 문자열을_정수로_바꾸기
  * Author      : sangxxjin
- * Date        : 2025. 4. 25.
+ * Date        : 2025. 4. 27.
  * Description : 
  * =====================================================================================================================
  * DATE          AUTHOR               NOTE
  * ---------------------------------------------------------------------------------------------------------------------
- * 2025. 4. 25.     sangxxjin               Initial creation
+ * 2025. 4. 27.     sangxxjin               Initial creation
  */
-public class 옹알이_2 {
+public class 문자열을_정수로_바꾸기 {
+	public int solution(String s) {
+		return Integer.parseInt(s);
+	}
 }
