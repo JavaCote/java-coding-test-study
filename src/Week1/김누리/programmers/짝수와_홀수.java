@@ -18,7 +18,7 @@ public class 짝수와_홀수 {
 	public String solution(int num) {
 		//  Stream API 이용 버전
 		return Stream.of(num)
-			.map(n -> num%2 == 0 ? "Even": " Odd")
+			.map(n -> num%2 == 0 ? "Even": "Odd")
 			.findFirst()
 			.get();
 	}
