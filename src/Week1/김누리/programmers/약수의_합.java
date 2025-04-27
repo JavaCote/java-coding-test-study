@@ -1,6 +1,6 @@
 package Week1.김누리.programmers;
 
-/**
+/*
  * PackageName : Week1.김누리.programmers
  * FileName    : 약수의_합
  * Author      : 김누리

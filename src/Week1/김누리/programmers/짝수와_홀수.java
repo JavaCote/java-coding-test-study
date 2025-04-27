@@ -3,7 +3,7 @@ package Week1.김누리.programmers;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-/**
+/*
  * PackageName : Week1.김누리.programmers
  * FileName    : 짝수와_홀수
  * Author      : 김누리

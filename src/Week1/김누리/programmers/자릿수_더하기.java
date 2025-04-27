@@ -2,7 +2,7 @@ package Week1.김누리.programmers;
 
 import java.util.stream.IntStream;
 
-/**
+/*
  * PackageName : Week1.김누리.programmers
  * FileName    : 자릿수_더하기
  * Author      : 김누리
