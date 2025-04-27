@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-/**
+/*
  * PackageName : Week1.김누리.programmers
  * FileName    : 자연수_뒤집어_배열로_만들기
  * Author      : 김누리

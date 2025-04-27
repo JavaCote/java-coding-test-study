@@ -3,7 +3,7 @@ package Week1.김누리.programmers;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-/**
+/*
  * PackageName : Week1.김누리.programmers
  * FileName    : 평균_구하기
  * Author      : 김누리
