@@ -1,15 +1,15 @@
-package Week1.김상진.promrammers;
+package Week1.김누리.programmers;
 
 /**
- * PackageName : Week1.김상진.promrammers
- * FileName    : a
- * Author      : sangxxjin
- * Date        : 2025. 4. 25.
- * Description : 
+ * PackageName : Week1.김누리.programmers
+ * FileName    : 하샤드_수
+ * Author      : 김누리
+ * Date        : 2025-04-25
+ * Description :
  * =====================================================================================================================
  * DATE          AUTHOR               NOTE
  * ---------------------------------------------------------------------------------------------------------------------
- * 2025. 4. 25.     sangxxjin               Initial creation
+ * 2025. 04. 25.     김누리               Initial creation
  */
-public class 옹알이_2 {
+public class 하샤드_수 {
 }
