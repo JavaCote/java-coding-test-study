@@ -15,15 +15,29 @@ import java.util.stream.IntStream;
  * 2025. 04. 27.     김누리               Stream API 버전
  */
 public class 두_정수_사이의_합 {
-	public int solution(int a, int b) {
+	public long solution(int a, int b) {
 		//  Stream API 이용
-		return IntStream.rangeClosed(a, b).sum();
+/*
+		return IntStream.rangeClosed(Math.min(a,b), Math.max(a,b))
+			.asLongStream()
+			.sum();
+*/
 
 		// Stream API 이용 X
+		long answer = 0;
+
+		if(a == b) return  a; // a와 b가 같을 때 아무거나 리턴
+
+		for(int i = Math.min(a,b); i <= Math.max(a,b); i++) {
+			answer += i;
+		}
+
+
+		return answer;
 	}
 
 	public void call_solution(int a, int b) {
-		int answer = solution(a, b);
+		long answer = solution(a, b);
 
 		System.out.println(answer);
 	}
