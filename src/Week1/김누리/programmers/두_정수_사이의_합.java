@@ -2,7 +2,7 @@ package Week1.김누리.programmers;
 
 import java.util.stream.IntStream;
 
-/*
+/**
  * PackageName : Week1.김누리.programmers
  * FileName    : 두_정수_사이의_합
  * Author      : 김누리

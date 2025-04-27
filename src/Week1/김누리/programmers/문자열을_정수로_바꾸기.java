@@ -1,6 +1,6 @@
 package Week1.김누리.programmers;
 
-/*
+/**
  * PackageName : Week1.김누리.programmers
  * FileName    : 문자열을_정수로_바꾸기
  * Author      : 김누리

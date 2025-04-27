@@ -1,6 +1,6 @@
 package Week1.김누리.programmers;
 
-/*
+/**
  * PackageName : Week1.김누리.programmers
  * FileName    : 문자열_내_p와_y의_개수
  * Author      : 김누리

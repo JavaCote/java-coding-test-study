@@ -2,7 +2,7 @@ package Week1.김누리.programmers;
 
 import java.util.stream.IntStream;
 
-/*
+/**
  * PackageName : Week1.김누리.programmers
  * FileName    : x만큼_간격이_있는_n개의_숫자
  * Author      : 김누리

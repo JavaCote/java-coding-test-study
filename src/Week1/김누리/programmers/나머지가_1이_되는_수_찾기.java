@@ -2,7 +2,7 @@ package Week1.김누리.programmers;
 
 import java.util.stream.IntStream;
 
-/*
+/**
  * PackageName : Week1.김누리.programmers
  * FileName    : 나머지가_1이_되는_수_찾기
  * Author      : 김누리
