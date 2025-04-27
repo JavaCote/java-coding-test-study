@@ -1,5 +1,6 @@
 package Week1.김누리.programmers;
 
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 /**
@@ -19,6 +20,7 @@ import java.util.stream.Stream;
 public class 평균_구하기 {
 	public double solution(int[] arr) {
 		//  Stream API 이용 버전
+		// return Arrays.stream(arr).average().orElse(0);
 
 		//  Stream API 이용하지 않은 버전
 		double answer = 0;
@@ -31,5 +33,11 @@ public class 평균_구하기 {
 		answer /= size;
 
 		return answer;
+	}
+
+	public void call_solution(int[] arr) {
+		double answer = solution(arr);
+
+		System.out.println(answer);
 	}
 }
