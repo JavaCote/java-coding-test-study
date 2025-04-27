@@ -13,6 +13,7 @@ import java.util.stream.IntStream;
  * ---------------------------------------------------------------------------------------------------------------------
  * 2025. 04. 25.     김누리               Initial creation
  * 2025. 04. 27.     김누리               Stream API 버전
+ * 2025. 04. 27.     김누리               Stream API이용하지 않은 버전
  */
 public class 두_정수_사이의_합 {
 	public long solution(int a, int b) {
