@@ -18,11 +18,17 @@ import java.util.stream.IntStream;
 public class x만큼_간격이_있는_n개의_숫자 {
 	public long[] solution(int x, int n) {
 		//  Stream API 이용 버전
-		return IntStream.rangeClosed(1,n)
+/*		return IntStream.rangeClosed(1,n)
 			.mapToLong(i -> (long)x*(i))
-			.toArray();
+			.toArray();*/
 
 		//  Stream API 이용하지 않는 버전
+		long[] answer = new long[n];
+
+		for (int i = 0; i < n; i++) {
+			answer[i] = (long)x*(i+1);
+		}
+		return answer;
 	}
 
 	public void call_solution(int x, int n) {
