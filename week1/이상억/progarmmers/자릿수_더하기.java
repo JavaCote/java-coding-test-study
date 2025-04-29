@@ -2,7 +2,7 @@ package week1.이상억.progarmmers;
 
 /**
  * PackageName : week1.이상억.programmers
- * FileName    : 약수의_합
+ * FileName    : 자릿수_더하기
  * Author      : sangeok
  * Date        : 2025. 4. 29.
  * Description :

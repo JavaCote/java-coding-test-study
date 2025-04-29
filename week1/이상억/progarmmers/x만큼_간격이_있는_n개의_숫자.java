@@ -2,7 +2,7 @@ package week1.이상억.progarmmers;
 
 /**
  * PackageName : week1.이상억.programmers
- * FileName    : 약수의_합
+ * FileName    : x만큼_간격이_있는_n개의_숫자
  * Author      : sangeok
  * Date        : 2025. 4. 29.
  * Description :
@@ -11,15 +11,13 @@ package week1.이상억.progarmmers;
  * ---------------------------------------------------------------------------------------------------------------------
  * 2025. 4. 29.     sangeok               Initial creation
  */
-import java.util.*;
 
+class Solution {
+    public long[] solution(int x, int n) {
+        long[] answer = new long[n];
 
-public class Solution {
-    public int solution(int n) {
-        int answer = 0;
-        while(n>0){
-            answer += n%10;
-            n /= 10;
+        for(int i = 1; i<=n; i++){
+            answer[i-1] = (long)x * i ;
         }
         return answer;
     }

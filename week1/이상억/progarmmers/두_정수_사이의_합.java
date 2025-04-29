@@ -2,7 +2,7 @@ package week1.이상억.progarmmers;
 
 /**
  * PackageName : week1.이상억.programmers
- * FileName    : 약수의_합
+ * FileName    : 두_정수_사이의_합
  * Author      : sangeok
  * Date        : 2025. 4. 29.
  * Description :
@@ -11,15 +11,18 @@ package week1.이상억.progarmmers;
  * ---------------------------------------------------------------------------------------------------------------------
  * 2025. 4. 29.     sangeok               Initial creation
  */
-import java.util.*;
 
-
-public class Solution {
-    public int solution(int n) {
-        int answer = 0;
-        while(n>0){
-            answer += n%10;
-            n /= 10;
+class Solution {
+    public long solution(int a, int b) {
+        long answer = 0;
+        int ch = 0;
+        if (a>b) {
+            ch = a;
+            a = b;
+            b = ch;
+        }
+        for(int i = a; i<=b; i++){
+            answer += (long)i;
         }
         return answer;
     }

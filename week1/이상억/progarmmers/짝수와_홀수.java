@@ -2,7 +2,7 @@ package week1.이상억.progarmmers;
 
 /**
  * PackageName : week1.이상억.programmers
- * FileName    : 약수의_합
+ * FileName    : 짝수와_홀수
  * Author      : sangeok
  * Date        : 2025. 4. 29.
  * Description :
@@ -11,16 +11,9 @@ package week1.이상억.progarmmers;
  * ---------------------------------------------------------------------------------------------------------------------
  * 2025. 4. 29.     sangeok               Initial creation
  */
-import java.util.*;
 
-
-public class Solution {
-    public int solution(int n) {
-        int answer = 0;
-        while(n>0){
-            answer += n%10;
-            n /= 10;
-        }
-        return answer;
+class Solution {
+    public String solution(int num) {
+        return (num % 2 == 0) ? "Even" : "Odd";
     }
 }
