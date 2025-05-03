@@ -13,6 +13,7 @@ import java.util.*;
  * ---------------------------------------------------------------------------------------------------------------------
  * 2025. 05. 03.     김누리               Initial creation
  * 2025. 05. 03.     김누리               HashMap을 이용한 버전 풀이
+ * 2025. 05. 03.     김누리               HashMap을 이용하지 않은 버전 풀이
  */
 public class 완주하지_못한_선수 {
 	//  HashMap 이용 버전
@@ -37,4 +38,20 @@ public class 완주하지_못한_선수 {
 
 		return answer;
 	}*/
+
+	public String solution(String[] participant, String[] completion) {
+		Arrays.sort(participant); //  참여자 배열 정렬. 예 : [eden, kiki, leo] // [ana, mislav, mislav, stanko]
+		Arrays.sort(completion); //  완주자 배열 정렬 예 : [eden, kiki] // [ana, mislav, stanko]
+
+		//  참여자 배열과 완주자 배열의 인덱스 값 비교.
+		for(int i = 0; i < completion.length; i++) {
+			if(!participant[i].equals(completion[i])){
+				return participant[i]; // 동명 이인의 경우 대상 유저 return
+			}
+		}
+
+		return participant[participant.length-1]; // 동명이인이 없는 경우 참여자 배열의 맨 마지막 인덱스 값 return
+	}
+
+
 }
