@@ -1,4 +1,4 @@
-package Week1.김누리.programmers;
+package week1.김누리.programmers;
 
 import java.util.Arrays;
 import java.util.stream.Stream;

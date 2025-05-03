@@ -1,4 +1,4 @@
-package Week1.김누리.baekjoon;
+package week1.김누리.baekjoon;
 
 /**
  * PackageName : Week1.김누리.programmers
