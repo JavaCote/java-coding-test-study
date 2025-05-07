@@ -1,6 +1,10 @@
-import java.util.*;
+package week1.강성욱.baekjoon;
 
-public class Main {
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Scanner;
+
+public class 스택2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
