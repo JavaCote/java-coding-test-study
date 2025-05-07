@@ -1,3 +1,5 @@
+package week2.김나은.programmers;
+
 class Solution {
     public int solution(int[][] sizes) {
         int length = 0, height = 0;

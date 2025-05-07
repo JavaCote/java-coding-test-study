@@ -1,3 +1,5 @@
+package week1.김나은.programmers;
+
 class Solution {
     public boolean solution(int x) {
         boolean answer = true;

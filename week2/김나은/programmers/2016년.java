@@ -1,3 +1,5 @@
+package week2.김나은.programmers;
+
 class Solution {
     public String solution(int a, int b) {
         String[] day = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"};

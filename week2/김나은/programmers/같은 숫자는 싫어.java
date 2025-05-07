@@ -1,3 +1,5 @@
+package week2.김나은.programmers;
+
 import java.util.*;
 
 public class Solution {

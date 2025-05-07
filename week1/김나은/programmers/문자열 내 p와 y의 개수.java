@@ -1,3 +1,5 @@
+package week1.김나은.programmers;
+
 class Solution {
     boolean solution(String s) {
         s = s.toLowerCase();
