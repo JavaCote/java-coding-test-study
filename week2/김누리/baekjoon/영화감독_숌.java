@@ -22,10 +22,11 @@ public class 영화감독_숌 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringBuilder sb = new StringBuilder();
-		int n = Integer.parseInt(br.readLine());
-		int num = 666;
+		int n = Integer.parseInt(br.readLine()); //  n번째 수 받아오기 위한 코드 
+		int num = 666; //  타겟 수 
 		int cnt = 0;
 
+		//  n번 동안 반복 
 		while(cnt < n) {
 			if(String.valueOf(num).contains("666")) cnt++;
 			num++;
