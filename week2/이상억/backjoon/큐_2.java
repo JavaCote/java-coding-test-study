@@ -1,7 +1,7 @@
-package week2.이상억.progarmmers;
+package week2.이상억.backjoon;
 
 /**
- * PackageName : week2.이상억.programmers
+ * PackageName : week2.이상억.backjoon
  * FileName    : 큐_2
  * Author      : sangeok
  * Date        : 2025. 5. 7.
