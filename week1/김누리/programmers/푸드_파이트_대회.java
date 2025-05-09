@@ -1,4 +1,4 @@
-package Week1.김누리.programmers;
+package week1.김누리.programmers;
 
 /**
  * PackageName : Week1.김누리.programmers
