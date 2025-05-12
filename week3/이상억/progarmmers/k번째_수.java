@@ -12,14 +12,16 @@ package week3.이상억.progarmmers;
  * 2025. 5. 12.     sangeok               Initial creation
  */
 
-// 전제 조건:
-// i = a , j = b , k = 3 -> array  a-b 까지 자름 -> 자른 array의 [c]의 인덱스
+// 문제 요구사항 :
+// i = a , j = b , k = 3 -> array  a-b 까지 자름 => 자른 array의 [c]의 인덱스
 
-// 접근 방식:
+// 접근 방식 : (1)
 // 1) commands 배열을 순회하면서 각 명령어 [i, j, k]에 접근
 // 2) 주어진 i ~ j 구간을 array에서 잘라 ArrayList에 저장
 // 3) list를 정렬한 후 k번째 값을 answer[i]에 저장
 
+
+// 회고 : 잘라 주는 함수 있음
 
 import java.util.*;
 
