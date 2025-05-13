@@ -21,7 +21,8 @@ package week3.이상억.progarmmers;
 // 3) list를 정렬한 후 k번째 값을 answer[i]에 저장
 
 
-// 회고 : 잘라 주는 함수 있음
+// 회고 : Arrays.copyOfRange() -> 쓰면 코드 더 간단 해짐
+// int[] newArray = Arrays.copyOfRange(originalArray, from, to);
 
 import java.util.*;
 

@@ -17,9 +17,9 @@ package week3.이상억.progarmmers;
 
 // 접근 방식 : (1)
 // 1) players의 value : index 저장
-// 2)  callings 시 앞 players와 인덱스 변경
+// 2) callings 시 앞 players와 인덱스 변경
 
-// 회고 :
+// 회고 : Hash 관련 메소드 아직 익숙하지 않음
 
 import java.util.*;
 

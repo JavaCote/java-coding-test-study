@@ -21,8 +21,8 @@ package week3.이상억.progarmmers;
 // 2) 그 다음 숫자 증가
 // 3) 증가 시키는 숫자의 1의 갯수가 n 과 똑같으면 반환
 
-// 회고 : bit 값 구해주는 함수 있던데
-
+// 회고 : Integer.bitCount(int n)
+// 이 함수는 주어진 정수 n을 2진수로 변환한 뒤, 1의 개수를 반환
 class Solution {
     public int solution(int n) {
         int n_bit = 0;
