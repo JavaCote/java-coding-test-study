@@ -2,7 +2,7 @@ package week3.이상억.progarmmers;
 
 /**
  * PackageName : week3.이상억.progarmmers;
- * FileName    : 이웃한_칸
+ * FileName    : 지폐_접기
  * Author      : sangeok
  * Date        : 2025. 5. 13.
  * Description :
