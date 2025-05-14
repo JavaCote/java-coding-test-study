@@ -1,7 +1,7 @@
 package week3.이상억.backjoon;
 /**
  * PackageName :  week3.이상억.backjoon
- * FileName    : 재귀함수가_뭔가요 ?
+ * FileName    : 블로그
  * Author      : sangeok
  * Date        : 2025. 5. 14.
  * Description :
@@ -17,6 +17,10 @@ package week3.이상억.backjoon;
 //                  최대 방문자 수 0 => SAD 출력
 //                  최대 방문자 수 0 아니면 =>  최대 일수가 몇 번인 지 두번째 줄 출력
 
+// 회고 :             sum = sum - visits[i-X] + visits[i];
+//      이 로직을 생각하는데 뇌사가 와서 꽤 많은 고민을 했던 것 같다.
+//      그리고 이 문제를 푸는데 있어서 뭔가 생각이 잘 정리 되지 않아.
+//      보통 접근방식에 대한 생각을 하고 코딩을 하는데 이 문제는 그러한 부분이 잘 되지 않아 오래 걸렸던 것 같다.
 import java.io.*;
 import java.util.*;
 
@@ -31,6 +35,7 @@ public class Main {
 
         int[] visits = new int[N];
         st = new StringTokenizer(br.readLine());
+
         for (int i = 0; i < N; i++) {
             visits[i] = Integer.parseInt(st.nextToken());
         }

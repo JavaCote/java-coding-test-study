@@ -1,6 +1,5 @@
 package week3.이상억.backjoon;
 
-
 /**
  * PackageName :  week3.이상억.backjoon
  * FileName    : 재귀함수가_뭔가요 ?
@@ -23,7 +22,7 @@ package week3.이상억.backjoon;
 //                    3) 깊이가 같을 때 재귀함수에 대한 답변 출력
 //                    4) 마무리 하면서 "라고 하였지"라는 문장 출력
 
-// 회고 :
+// 회고 : 간만에 풀어보는 재귀함수 문제라 얼 좀 탔던 것 같다. 특히 백준 문제를 풀 때 유독 심한거 같다.
 
 
 import java.util.Scanner;
