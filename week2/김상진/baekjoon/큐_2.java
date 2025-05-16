@@ -1,4 +1,4 @@
-package week2.김상진.programmers;
+package week2.김상진.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
