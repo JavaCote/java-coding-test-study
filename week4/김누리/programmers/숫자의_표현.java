@@ -19,14 +19,17 @@ public class 숫자의_표현  {
 		for(int i = 0; i < n; i++) {
 			int sum = 0;
 
-			// sum에 1부터 n 까지 반복하며 sum == n이면 answer ++ 아니면 반복 종료
 			for(int j = i+1; j <= n; j++) {
 				sum += j;
 
+				//  sum의 값이 타겟 n 값이랑 같으면 answer++
 				if(sum == n) {
 					answer++;
 					break;
-				} else if(sum > n){
+				}
+
+				//  sum이 타겟 n 값 보다 크면 2번째 for문은 종료
+				if(sum > n) {
 					break;
 				}
 			}
