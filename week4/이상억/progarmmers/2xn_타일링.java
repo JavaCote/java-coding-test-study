@@ -1,8 +1,8 @@
-package week4.이상억.progarmmers;
+package week5.이상억.progarmmers;
 
 /**
- * PackageName : week4.이상억.progarmmers;
- * FileName    : 2xn_타일링
+ * PackageName : week5.이상억.progarmmers;
+ * FileName    : 예산
  * Author      : sangeok
  * Date        : 2025. 5. 22.
  * Description :
