@@ -12,30 +12,25 @@ package week4.이상억.progarmmers;
  * 2025. 5. 22.     sangeok               Initial creation
  */
 
+// 문제 요구사항 : 	신청 금액 배열 d , 예산 budget 일 때 최대 몇개 부서에 물품을 지원 할 수 있는지
 
-// 문제 요구사항 	: 가로 길이 => 2, 세로 길이 => 1 인 직사각형 모양 타일
-// 이 직사각형을 이용해 새로운 길이가 2이고 가로 길이 n 인 바닥을 가득 채우려고 함
+//  접근 방식 : 	정렬 후 작은 수 부터 빼기
 
-// 접근 방식 : (1) 이거 피보나치 수열 아닌가 ?
+import java.util.*;
 
 class Solution {
-    public int solution(int n) {
+    public int solution(int[] d, int budget) {
         int answer = 0;
 
-        int[] a = new int[n+1];
+        Arrays.sort(d);
 
-        if(n==0) return 0;
-        if(n==1) return 1;
-        if(n==2) return 2;
-
-        a[0] = 0;
-        a[1] = 1;
-        a[2] = 2;
-        for(int i = 3; i < n + 1; i++){
-            a[i] = (a[i-1] + a[i-2]) % 1000000007 ;
-
+        for(int cost : d){
+            if(cost <= budget) {
+                budget -= cost ;
+                answer ++;
+            }
         }
-        answer = a[n] ;
+
         return answer;
     }
 }
