@@ -36,4 +36,3 @@ public class 예산 {
 		return answer;
 	}
 }
-}
