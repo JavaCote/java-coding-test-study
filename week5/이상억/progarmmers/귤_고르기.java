@@ -1,6 +1,6 @@
 /**
  * PackageName : week5.이상억.progarmmers;
- * FileName    : 예산
+ * FileName    : 귤_고르기
  * Author      : sangeok
  * Date        : 2025. 5. 23.
  * Description :
@@ -11,9 +11,11 @@
  */
 
 
-//문제 요구사항 : 	신청 금액 배열 d , 예산 budget 일 때 최대 몇개 부서에 물품을 지원 할 수 있는지
-
-// 접근 방식 : 	정렬 후 작은 수 부터 빼기
+//문제 요구사항 : 	문제 요구사항 :	귤이 8개 [ 1, 3, 2, 5, 4, 5, 2, 3] => [1, 2, 2, 3, 3, 4, 5, 5]
+//			크기가 다른 귤을 최소화 하고 싶음 / 한 상자에 담는 귤의 갯수 : k , 귤 크기 배열 : tangerine
+//			크기가 서로 다른 최솟값 : result
+//
+//
 import java.util.*;
 
 class Solution {
