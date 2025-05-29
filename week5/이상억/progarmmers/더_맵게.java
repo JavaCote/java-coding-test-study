@@ -1,5 +1,5 @@
 /**
- * PackageName : week4.이상억.progarmmers;
+ * PackageName : week5.이상억.progarmmers;
  * FileName    : 더_맵게
  * Author      : sangeok
  * Date        : 2025. 5. 23.

@@ -1,5 +1,5 @@
 /**
- * PackageName : week4.이상억.progarmmers;
+ * PackageName : week5.이상억.progarmmers;
  * FileName    : 구명보트
  * Author      : sangeok
  * Date        : 2025. 5. 23.
