@@ -1,45 +1,39 @@
 /**
  * PackageName : week5.이상억.progarmmers;
- * FileName    : 구명보트
+ * FileName    : 삼총사
  * Author      : sangeok
- * Date        : 2025. 5. 23.
+ * Date        : 2025. 5. 30.
  * Description :
  * =====================================================================================================================
  * DATE          AUTHOR               NOTE
  * ---------------------------------------------------------------------------------------------------------------------
- * 2025. 5. 23.     sangeok               Initial creation
+ * 2025. 5. 30.     sangeok               Initial creation
  */
 
-// 문제 요구사항 : 	한번에 최대 2명
-//                  구명보트를 최대한 적게 사용하여 많은 사람을 구하려고 함
-//                  사람의 무게를 담은 배열 people / 구명 보트의 무게 제한 limit
-//                  사람, 구명 보트 무게 40~240kg
+// 접근 방식 : (1) dfs 로 접근해서 풀었다
 
-//        접근 방식 : (1)	배열 정렬하고
-//                          왼쪽과 오른쪽을 비교해서 limit 안넘으면 둘다 타는거고 넘으면 오른쪽 한사람만 타는거고
+// 회고 : 보자마자 완전탐색 유형의 문제임이 많이 느껴졌다. for문을 사용해서 푸는 방식이 먼저 떠올랐지만 학습을 위해 dfs 로 시도 해봤다.
+// 5주차를 풀고 자신감을 많이 얻고 다른 문제도 쉽게 풀 수 있을거라 생각했지만 아직은 dfs 유형에 더 익숙해져야 함을 느꼈다.
 
-import java.util.*;
 
 class Solution {
-    public int solution(int[] people, int limit) {
-        int answer = 0;
+    int answer = 0;
 
-        Arrays.sort(people);
-        int leftpeople = 0;
-        int rightpeople = people.length - 1;
+    public int solution(int[] number) {
+        dfs(number, 0, 0, 0);
+        return answer;
+    }
 
-        while( leftpeople <= rightpeople ){
-            int sum = people[leftpeople] + people[rightpeople];
-
-            if (people[leftpeople] + people[rightpeople] <= limit) {
-                leftpeople++;
-                rightpeople--;
-            } else {
-                rightpeople--;
+    public void dfs(int[] number, int idx, int start, int sum) {
+        if (idx == 3) {
+            if (sum == 0) {
+                answer++;
             }
-            answer++;
+            return;
         }
 
-        return answer;
+        for (int i = start; i < number.length; i++) {
+            dfs(number, idx + 1, i + 1, sum + number[i]);
+        }
     }
 }
