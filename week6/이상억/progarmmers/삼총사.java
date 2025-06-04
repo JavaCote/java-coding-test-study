@@ -1,5 +1,5 @@
 /**
- * PackageName : week5.이상억.progarmmers;
+ * PackageName : week6.이상억.progarmmers;
  * FileName    : 삼총사
  * Author      : sangeok
  * Date        : 2025. 5. 30.
