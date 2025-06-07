@@ -1,6 +1,6 @@
 /**
  * PackageName : week6.이상억.progarmmers;
- * FileName    : 모음사전
+ * FileName    : 괄호_회전하기
  * Author      : sangeok
  * Date        : 2025. 6. 5.
  * Description :
