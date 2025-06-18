@@ -22,12 +22,13 @@ public class 기사단원의_무기 {
 			}
 			return answer;
 		}
+		// 약수의 개수 구하기
 		private int countDivisors(int num){
 			int count=0;
 			for(int i=1; i<=Math.sqrt(num);i++){
 				if(num%i==0){
 					count++;
-					//약수일때 다른 한쪽의 약수도 추가
+					//약수일때 다른 한쪽의 약수도 추가 제곱방지
 					if(i != num/i) count++;
 				}
 			}
