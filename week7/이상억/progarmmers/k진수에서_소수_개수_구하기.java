@@ -1,6 +1,6 @@
 /**
  * PackageName : week7.이상억.progarmmers;
- * FileName    : 음양_더하기
+ * FileName    : k진수에서_소수_구하기
  * Author      : sangeok
  * Date        : 2025. 6. 11.
  * Description :
