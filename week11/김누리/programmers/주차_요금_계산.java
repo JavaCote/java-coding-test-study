@@ -81,7 +81,6 @@ public class 주차_요금_계산 {
 	public int[] solution(int[] fees, String[] records) {
 		Map<String,Integer> inMap = new HashMap<>(); // 입차 기록용
 		Map<String,Integer> totalMap = new HashMap<>(); // 최종 누적 시간 기록용
-		Set<String> car = new HashSet<>(); // 총 차량
 
 		//  차량 입출력 기록
 		for(String r : records) {
@@ -89,8 +88,6 @@ public class 주차_요금_계산 {
 			String carNum = tmp[1]; // 차량 번호
 			int time = toMin(tmp[0]); // 입출력 시간
 			String io = tmp[2]; // 입출력 구분
-
-			car.add(carNum);
 
 			switch(io) {
 				case "IN" :
@@ -113,10 +110,10 @@ public class 주차_요금_계산 {
 			totalMap.put(s,totalMap.getOrDefault(s,0) + totalTime);
 		}
 
-		List<String> list = new LinkedList<>(car);
+		List<String> list = new LinkedList<>(totalMap.keySet());
 		Collections.sort(list);
 
-		int[] answer = new int[car.size()];
+		int[] answer = new int[list.size()];
 		int idx = 0;
 
 		//  요금 계산.
