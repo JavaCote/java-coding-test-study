@@ -1,6 +1,6 @@
 /**
  * PackageName : week14.이상억.progarmmers;
- * FileName    : JadenCase_문자열_만들기
+ * FileName    : 테이블_해시_함수
  * Author      : sangeok
  * Date        : 2025. 07. 28.
  * Description :
