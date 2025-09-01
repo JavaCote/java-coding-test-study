@@ -40,4 +40,18 @@ public class 비밀지도 {
 
 		return answer;
 	}
+
+	/*
+
+		//  Stream API 이용한 풀이
+	    public String[] solution(int n, int[] arr1, int[] arr2) {
+        return IntStream.range(0,n)
+            .mapToObj(i -> (String.format("%"+n+"s",
+                                          Integer.toBinaryString(arr1[i] | arr2[i])
+                                          .replace('1','#')
+                                          .replace('0',' ')
+                                         )))
+            .toArray(String[]::new);
+    }
+	*/
 }
