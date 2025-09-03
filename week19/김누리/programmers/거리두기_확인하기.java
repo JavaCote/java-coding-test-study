@@ -1,7 +1,7 @@
 package week19.김누리.programmers;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * PackageName : week19.김누리.programmers
@@ -87,13 +87,12 @@ public class 거리두기_확인하기 {
 
 	public boolean bfs(char[][]place, int x, int y) {
 		visited = new boolean[n][m];
-		//  앞 뒤 위치를 모두 체킹해야 하니 큐 말고 데크로
-		Deque<int[]> dq = new ArrayDeque<>();
-		dq.offer(new int[]{x,y,0});
+		Queue<int[]> q = new LinkedList<>();
+		q.offer(new int[]{x,y,0});
 		visited[x][y] = true;
 
-		while(!dq.isEmpty()) {
-			int[] now = dq.poll();
+		while(!q.isEmpty()) {
+			int[] now = q.poll();
 			int nx = now[0], ny = now[1], cnt = now[2];
 
 			for(int[] d : dir) {
@@ -107,7 +106,7 @@ public class 거리두기_확인하기 {
 				if(place[dx][dy] == 'P') return false; //  사람이면 종료
 
 				visited[dx][dy] = true;
-				dq.offer(new int[]{dx,dy,nc});
+				q.offer(new int[]{dx,dy,nc});
 			}
 		}
 
