@@ -1,4 +1,4 @@
-package week20.강성욱.baekjoon;
+package week20.강성욱.programmers;
 
 import java.util.ArrayList;
 import java.util.HashMap;

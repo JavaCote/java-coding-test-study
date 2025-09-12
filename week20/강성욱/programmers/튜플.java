@@ -1,4 +1,4 @@
-package week20.강성욱.baekjoon;
+package week20.강성욱.programmers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.Set;
 
 /**
  * PackageName : week20.강성욱.baekjoon
- * FileName    : 튜블
+ * FileName    : 튜플
  * Author      : Baekgwa
  * Date        : 2025-09-11
  * Description : 
@@ -18,7 +18,7 @@ import java.util.Set;
  * ---------------------------------------------------------------------------------------------------------------------
  * 2025-09-11     Baekgwa               Initial creation
  */
-public class 튜블 {
+public class 튜플 {
 	class Solution {
 		public int[] solution(String s) {
 			Set<Integer> visited = new HashSet<>();
