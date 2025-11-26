@@ -15,6 +15,7 @@ public class Main{
     static int[] dist;
     static boolean[] visit;
     static int N, M;
+    static int[] prev;
 
     public static void main(String[] args) throws IOException {
 
@@ -43,13 +44,28 @@ public class Main{
 
         dist = new int[N+1];
         visit = new boolean[N+1];
+        prev = new int[N+1];
 
         Arrays.fill(dist, Integer.MAX_VALUE);
 
         dijkstra(start);
 
+
+        List<Integer> path = new ArrayList<>();
+        int cur = end;
+        while(true){
+            path.add(cur);
+            if(cur == start) break;
+            cur = prev[cur];
+        }
+
+        Collections.reverse(path);
+
         System.out.println(dist[end]);
+        System.out.println(path.size());
+        for(int city : path) System.out.print(city + " ");
     }
+
 
     static void dijkstra(int start){
         PriorityQueue<Node> pq = new PriorityQueue<>((o1, o2) -> o1.cost - o2.cost);
@@ -65,6 +81,7 @@ public class Main{
             for(Node next : graph.get(now.v)){
                 if(!visit[next.v] && dist[next.v] > dist[now.v] + next.cost){
                     dist[next.v] = dist[now.v] + next.cost;
+                    prev[next.v] = now.v;
                     pq.add(new Node(next.v, dist[next.v]));
                 }
             }
